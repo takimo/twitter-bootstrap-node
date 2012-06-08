@@ -471,8 +471,10 @@ function abort(str) {
 
 /**
  * Copy File
+ * @param {String} srcFile
+ * @param {String} dstFile
+ * @param {Function} callback
  */
-
 function cp(srcFile, dstFile, callback) {
   if( p.existsSync( srcFile ) && fs.statSync( srcFile ).isFile() ) {
     var oldFile = fs.createReadStream( srcFile )
@@ -491,3 +493,11 @@ function cp(srcFile, dstFile, callback) {
     throw 'not found a file : ' + srcFile;
   }
 }
+
+(The MIT License)
+
+/**
+ * This script is based Express's bin/express
+ * https://github.com/visionmedia/express
+ * Copyright (c) 2009-2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
+ */
