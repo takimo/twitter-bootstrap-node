@@ -1,0 +1,11 @@
+{
+  "name": "twitter-bootstrap-node",
+  "version": "0.1.0",
+  "bin": {
+    "twitter-bootstrap": "./bin/twitter-bootstrap"
+  },
+  "dependencies": {
+    "mkdirp": "0.3.0",
+    "fs.extra": ""
+  }
+}
