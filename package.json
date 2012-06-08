@@ -1,11 +1,16 @@
 {
   "name": "twitter-bootstrap-node",
-  "version": "0.1.0",
+  "description": "Twitter Bootstrap for Node.js",
+  "author": "shinya.takimoto <shinya.takimoto@gmail.com>",
+  "version": "0.1.0beta",
   "bin": {
     "twitter-bootstrap": "./bin/twitter-bootstrap"
   },
   "dependencies": {
     "mkdirp": "0.3.0",
     "fs.extra": ""
-  }
+  },
+  "keywords": ["express", "genelator", "twitter", "bootstrap"],
+  "repository": "git://github.com/takimo/twitter-bootstrap-node",
+  "engines": { "node": "*" }
 }
