@@ -15,6 +15,8 @@ Create the project:
 (Default css engine is "less",And template engine is "jade")
 
     $ twitter-bootstrap project
+    $ cd project
+    $ node app.js
 
 Change template engine:
 
@@ -23,7 +25,9 @@ Change template engine:
 ## Based
 
   Express (bin/express)
+
   https://github.com/visionmedia/express
+
   Copyright (c) 2009-2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
 
 ## License
