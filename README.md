@@ -11,18 +11,20 @@ Twitter Bootstrap for Node.js
 
 ## Quick Start
 
-Create project.
-Default css engine is "less",And template engine is "jade"
+Create the project:
+(Default css engine is "less",And template engine is "jade")
+
     $ twitter-bootstrap project
 
-Change template engine
+Change template engine:
+
     $ twitter-bootstrap -t ejs project
 
 ## Based
 
-Express (bin/express)
-https://github.com/visionmedia/express
-Copyright (c) 2009-2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
+  Express (bin/express)
+  https://github.com/visionmedia/express
+  Copyright (c) 2009-2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;
 
 ## License
 
