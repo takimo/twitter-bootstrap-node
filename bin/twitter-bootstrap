@@ -87,11 +87,24 @@ var jadeLayout = [
  */
 
 var jadeIndex = [
-    'h1= title'
-  , 'p Welcome to #{title}'
-  , 'div.navbar.navbar-fixed-top'
-  , '  div.navbar-inner'
-  , '    div.container'
+  , '.navbar.navbar-fixed-top'
+  , '  .navbar-inner'
+  , '    .container'
+  , '      a.brand(href="#")= title'
+  , '      .nav-collapse'
+  , '        ul.nav'
+  , '          li.active'
+  , '            a(href="#") Home'
+  , '          li'
+  , '            a(href="#about") About'
+  , '          li'
+  , '            a(href="#contact") Contact'
+  , '.container'
+  , '  .hero-unit'
+  , '    h1 Hello, World!'
+  , '    p This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.'
+  , '    p'
+  , '      a.btn.btn-primary.btn-large(href="#") Lean more >>'
 ].join(eol);
 
 /**
@@ -157,7 +170,10 @@ var stylus = [
  * Twitter bootstrap base less
  */
 var less = [
-    '@import "bootstrap.less";'
+  , '@import "bootstrap.less";'
+  , '@import "responsive.less";'
+  , '@iconSpritePath: "/images/bootstrap/glyphicons-halflings.png";'
+  , '@iconWhiteSpritePath:     "/images/bootstrap/glyphicons-halflings-white.png";'
   , ''
   , '// Padding for fixed-navbar'
   , 'body {'
@@ -317,6 +333,14 @@ function createApplicationAt(path) {
           default:
             write(path + '/public/stylesheets/style.less', less);
         }
+      });
+    });
+    mkdir(path + '/public/images/bootstrap', function(){
+      fs.copy('./vendor/bootstrap/img/glyphicons-halflings.png', path + '/public/images/bootstrap/glyphicons-halflings.png', function(err){
+        console.log('   \x1b[36mcreate\x1b[0m : ' + path + '/public/images/bootstrap/glyphicons-halflings.png');
+      });
+      fs.copy('./vendor/bootstrap/img/glyphicons-halflings-white.png', path + '/public/images/bootstrap/glyphicons-halflings-white.png', function(err){
+        console.log('   \x1b[36mcreate\x1b[0m : ' + path + '/public/images/bootstrap/glyphicons-halflings-white.png');
       });
     });
 
@@ -493,8 +517,6 @@ function cp(srcFile, dstFile, callback) {
     throw 'not found a file : ' + srcFile;
   }
 }
-
-(The MIT License)
 
 /**
  * This script is based Express's bin/express
