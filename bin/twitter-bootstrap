@@ -368,7 +368,11 @@ function createApplicationAt(path) {
     json += '  , "private": true' + eol;
     json += '  , "dependencies": {' + eol;
     json += '      "express": "' + version + '"' + eol;
-    if (cssEngine && cssEngine != "css") json += '    , "' + cssEngine + '": ">= 0.0.1"' + eol;
+    if (!cssEngine) {
+        json += '    , "less": ">= 0.0.1"' + eol;
+    } else if(cssEngine && cssEngine != "css") {
+        json += '    , "' + cssEngine + '": ">= 0.0.1"' + eol;
+    }
     if (templateEngine) json += '    , "' + templateEngine + '": ">= 0.0.1"' + eol;
     json += '  }' + eol;
     json += '}';
