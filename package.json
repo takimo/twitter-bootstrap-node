@@ -2,7 +2,7 @@
   "name": "twitter-bootstrap-node",
   "description": "Twitter Bootstrap for Node.js",
   "author": "shinya.takimoto <shinya.takimoto@gmail.com>",
-  "version": "0.1.0beta",
+  "version": "0.1.1beta",
   "bin": {
     "twitter-bootstrap": "./bin/twitter-bootstrap"
   },

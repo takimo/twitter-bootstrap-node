@@ -322,7 +322,7 @@ function createApplicationAt(path) {
      *  twitter bootstrap
      */
     mkdir(path + '/vendor/twitter/bootstrap', function(){
-      fs.copyRecursive('./vendor/bootstrap/less', path + '/vendor/twitter/bootstrap/less', function(err){
+      fs.copyRecursive(__dirname + '/../vendor/bootstrap/less', path + '/vendor/twitter/bootstrap/less', function(err){
         switch (cssEngine) {
           case 'stylus':
             write(path + '/public/stylesheets/style.styl', stylus);
