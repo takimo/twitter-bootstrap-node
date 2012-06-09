@@ -6,8 +6,7 @@ Twitter Bootstrap for Node.js
 
 ## Installation
 
-    $ git clone https://github.com/takimo/twitter-bootstrap-node.git
-    $ npm install -g ./twitter-bootstrap-node
+    $ npm install -g twitter-bootstrap-node
 
 ## Quick Start
 
@@ -16,13 +15,14 @@ Create the project:
 
     $ twitter-bootstrap project
     $ cd project
+    $ npm install
     $ node app.js
 
 Change template engine:
 
     $ twitter-bootstrap -t ejs project
 
-## Based
+## Based Application
 
   Express (bin/express)
 
