@@ -171,15 +171,15 @@ var stylus = [
  */
 var less = [
   , '@import "bootstrap.less";'
-  , '@import "responsive.less";'
-  , '@iconSpritePath: "/images/bootstrap/glyphicons-halflings.png";'
-  , '@iconWhiteSpritePath:     "/images/bootstrap/glyphicons-halflings-white.png";'
-  , ''
   , '// Padding for fixed-navbar'
   , 'body {'
   , '  padding-top: 60px;'
   , '  padding-bottom: 40px;'
   , '}'
+  , '@import "responsive.less";'
+  , '@iconSpritePath: "/images/bootstrap/glyphicons-halflings.png";'
+  , '@iconWhiteSpritePath:     "/images/bootstrap/glyphicons-halflings-white.png";'
+  , ''
 ].join(eol);
 
 var lessCompatible = [
