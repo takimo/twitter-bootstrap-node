@@ -1,8 +1,9 @@
 twitter-bootstrap-node
 ======================
 
-Twitter Bootstrap for Node.js
-(now only support express template)
+Twitter Bootstrap for Node.js(now only support express template)
+
+This tool can build template that support 'Twitter Bootstrap'
 
 ## Installation
 
@@ -18,9 +19,16 @@ Create the project:
     $ npm install
     $ node app.js
 
+![command screen shot](http://cdn-ak.f.st-hatena.com/images/fotolife/t/takimo/20120609/20120609111814.png)
+
 Change template engine:
 
     $ twitter-bootstrap -t ejs project
+
+# Future
+  * build template(not only supported express template)
+  * bootstrap's image files copy to "images/bootstrap/"
+  * CSS(bootstrap.css or bootstrap.min.css) is dynamically built using "Less" 
 
 ## Based Application
 
