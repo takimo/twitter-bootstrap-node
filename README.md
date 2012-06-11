@@ -34,17 +34,17 @@ Change template engine:
 
 bootstrap.css(bootstrap.min.css) is as 'public/stylesheets/style.css' that already added views/layout.jade(layout.ejs)
 
-'''less
+'''css
 // public/stylesheets/style.css
-  @import "bootstrap.less";
-  // Padding for fixed-navbar
-  body {'
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }'
-  @import "responsive.less";
-  , '@iconSpritePath: "/images/bootstrap/glyphicons-halflings.png";'
-  , '@iconWhiteSpritePath:     "/images/bootstrap/glyphicons-halflings-white.png";'
+@import "bootstrap.less";
+// Padding for fixed-navbar
+body {
+padding-top: 60px;
+padding-bottom: 40px;
+}
+@import "responsive.less";
+@iconSpritePath: "/images/bootstrap/glyphicons-halflings.png";
+@iconWhiteSpritePath:     "/images/bootstrap/glyphicons-halflings-white.png";
 '''
 
 
