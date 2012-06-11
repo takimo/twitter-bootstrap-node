@@ -336,10 +336,10 @@ function createApplicationAt(path) {
       });
     });
     mkdir(path + '/public/images/bootstrap', function(){
-      fs.copy('./vendor/bootstrap/img/glyphicons-halflings.png', path + '/public/images/bootstrap/glyphicons-halflings.png', function(err){
+      fs.copy(__dirname + '/../vendor/bootstrap/img/glyphicons-halflings.png', path + '/public/images/bootstrap/glyphicons-halflings.png', function(err){
         console.log('   \x1b[36mcreate\x1b[0m : ' + path + '/public/images/bootstrap/glyphicons-halflings.png');
       });
-      fs.copy('./vendor/bootstrap/img/glyphicons-halflings-white.png', path + '/public/images/bootstrap/glyphicons-halflings-white.png', function(err){
+      fs.copy(__dirname + '/../vendor/bootstrap/img/glyphicons-halflings-white.png', path + '/public/images/bootstrap/glyphicons-halflings-white.png', function(err){
         console.log('   \x1b[36mcreate\x1b[0m : ' + path + '/public/images/bootstrap/glyphicons-halflings-white.png');
       });
     });
