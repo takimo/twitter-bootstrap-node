@@ -27,8 +27,26 @@ Change template engine:
 
 # Future
   * build template(not only supported express template)
-  * bootstrap's image files copy to "images/bootstrap/"
+  * bootstrap's image files copy to "public/images/bootstrap/"
   * CSS(bootstrap.css or bootstrap.min.css) is dynamically built using "Less" 
+
+# What should add "bootstrap.css/bootstrap.min.css" where? 
+
+bootstrap.css(bootstrap.min.css) is as 'public/stylesheets/style.css' that already added views/layout.jade(layout.ejs)
+
+'''less
+// public/stylesheets/style.css
+  @import "bootstrap.less";
+  // Padding for fixed-navbar
+  body {'
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }'
+  @import "responsive.less";
+  , '@iconSpritePath: "/images/bootstrap/glyphicons-halflings.png";'
+  , '@iconWhiteSpritePath:     "/images/bootstrap/glyphicons-halflings-white.png";'
+'''
+
 
 ## Based Application
 
