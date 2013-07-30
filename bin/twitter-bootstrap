@@ -393,7 +393,7 @@ function createApplicationAt(path) {
     json += '  , "dependencies": {' + eol;
     json += '      "express": "' + version + '"' + eol;
     if (!cssEngine) {
-        json += '    , "less": ">= 0.0.1"' + eol;
+        json += '    , "less": "1.3.3"' + eol;
     } else if(cssEngine && cssEngine != "css") {
         json += '    , "' + cssEngine + '": ">= 0.0.1"' + eol;
     }
